@@ -1,5 +1,4 @@
 import 'package:bloc_boiler_plate/features/widgets/custom_elevated_button.dart';
-import 'package:bloc_boiler_plate/localizations/app_localization.dart';
 import 'package:bloc_boiler_plate/routing/app_routes.dart';
 import 'package:bloc_boiler_plate/theme/app_styles.dart';
 import 'package:bloc_boiler_plate/theme/colors.dart';
@@ -87,7 +86,7 @@ class LoginOrSignupScreen extends StatelessWidget {
           width: 281.h,
           margin: EdgeInsets.only(right: 29.h),
           child: Text(
-            "our community is ready to help you to join our best platform",
+            "Our community is ready to help you to join our best platform",
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             style: CustomTextStyles.bodySmall,

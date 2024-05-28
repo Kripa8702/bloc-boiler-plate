@@ -24,10 +24,10 @@ class VersionControlService {
 
     /// Data must be in the following format
     final data = {
-      'build_number': 2,
+      'build_number': 1,
       'version': '1.0.0',
       'change_log': 'Initial Release',
-      'force': true,
+      'force': false,
       'app_url_android':
           'https://play.google.com/store/apps/details?id=com.example.bloc_boiler_plate',
       'app_url_ios': 'https://apps.apple.com/us/app/instagram/id389801252',
