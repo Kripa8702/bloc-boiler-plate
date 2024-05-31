@@ -125,12 +125,12 @@ class CustomTextFormField extends StatelessWidget {
         suffixIcon: suffix,
         suffixIconConstraints: suffixConstraints,
         isDense: true,
-        contentPadding: contentPadding ?? EdgeInsets.all(19.h),
+        contentPadding: contentPadding ?? EdgeInsets.all(19.w),
         fillColor: fillColor,
         filled: filled,
         border: borderDecoration ??
             OutlineInputBorder(
-              borderRadius: BorderRadius.circular(14.h),
+              borderRadius: BorderRadius.circular(14.w),
               borderSide: BorderSide(
                 color: primaryColor.withOpacity(0.1),
                 width: 1,
@@ -138,7 +138,7 @@ class CustomTextFormField extends StatelessWidget {
             ),
         enabledBorder: borderDecoration ??
             OutlineInputBorder(
-              borderRadius: BorderRadius.circular(14.h),
+              borderRadius: BorderRadius.circular(14.w),
               borderSide: BorderSide(
                 color: primaryColor.withOpacity(0.1),
                 width: 1,
@@ -146,7 +146,7 @@ class CustomTextFormField extends StatelessWidget {
             ),
         focusedBorder: borderDecoration ??
             OutlineInputBorder(
-              borderRadius: BorderRadius.circular(14.h),
+              borderRadius: BorderRadius.circular(14.w),
               borderSide: const BorderSide(
                 color: primaryColor,
                 width: 1,
@@ -158,7 +158,7 @@ class CustomTextFormField extends StatelessWidget {
 /// Extension for [CustomTextFormField] to get different styles
 extension TextFormFieldStyleHelper on CustomTextFormField {
   static OutlineInputBorder get outlineOnPrimaryTL14 => OutlineInputBorder(
-        borderRadius: BorderRadius.circular(14.h),
+        borderRadius: BorderRadius.circular(14.w),
         borderSide: BorderSide(
           color: primaryColor.withOpacity(0.1),
           width: 1,

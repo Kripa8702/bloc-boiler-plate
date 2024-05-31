@@ -21,17 +21,17 @@ class LoginOrSignupScreen extends StatelessWidget {
       body: SafeArea(
         child: Container(
           width: double.maxFinite,
-          padding: EdgeInsets.symmetric(horizontal: 32.h, vertical: 39.v),
+          padding: EdgeInsets.symmetric(horizontal: 32.w, vertical: 39.h),
           child: Column(
             children: [
               _buildPageHeader(context),
-              SizedBox(height: 150.v),
+              SizedBox(height: 150.h),
               Text(
                 "Get in through",
                 style:
                     CustomTextStyles.titleMedium.copyWith(color: primaryColor),
               ),
-              SizedBox(height: 33.v),
+              SizedBox(height: 33.h),
               CustomElevatedButton(
                 text: "Sign Up",
                 buttonTextStyle: CustomTextStyles.titleMedium.copyWith(
@@ -45,7 +45,7 @@ class LoginOrSignupScreen extends StatelessWidget {
                   // );
                 },
               ),
-              SizedBox(height: 14.v),
+              SizedBox(height: 14.h),
               CustomElevatedButton(
                 text: "Login",
                 buttonStyle: CustomButtonStyles.fillDeepOrange,
@@ -59,7 +59,7 @@ class LoginOrSignupScreen extends StatelessWidget {
                   );
                 },
               ),
-              SizedBox(height: 5.v)
+              SizedBox(height: 5.h)
             ],
           ),
         ),
@@ -73,7 +73,7 @@ class LoginOrSignupScreen extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
-          width: 208.h,
+          width: 208.w,
           child: Text(
             "Welcome to our community",
             maxLines: 3,
@@ -81,10 +81,10 @@ class LoginOrSignupScreen extends StatelessWidget {
             style: CustomTextStyles.displaySmall,
           ),
         ),
-        SizedBox(height: 2.v),
+        SizedBox(height: 2.h),
         Container(
-          width: 281.h,
-          margin: EdgeInsets.only(right: 29.h),
+          width: 281.w,
+          margin: EdgeInsets.only(right: 29.w),
           child: Text(
             "Our community is ready to help you to join our best platform",
             maxLines: 2,

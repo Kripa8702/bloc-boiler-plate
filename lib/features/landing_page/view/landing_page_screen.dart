@@ -19,19 +19,20 @@ class LandingPageScreen extends StatelessWidget {
       listener: (context, state) {},
       builder: (context, state) {
         return Scaffold(
-            body: SafeArea(
-              child: Center(
-                child: bottomNavScreen.elementAt(state.tabIndex),
-              ),
+          body: SafeArea(
+            child: Center(
+              child: bottomNavScreen.elementAt(state.tabIndex),
             ),
-            bottomNavigationBar: BottomNavigationScreen(
-              tabIndex: state.tabIndex,
-              onTabChange: (index) {
-                BlocProvider.of<LandingPageBloc>(context).add(
-                  TabChange(tabIndex: index),
-                );
-              },
-            ));
+          ),
+          bottomNavigationBar: BottomNavigationScreen(
+            tabIndex: state.tabIndex,
+            onTabChange: (index) {
+              BlocProvider.of<LandingPageBloc>(context).add(
+                TabChange(tabIndex: index),
+              );
+            },
+          ),
+        );
       },
     );
   }

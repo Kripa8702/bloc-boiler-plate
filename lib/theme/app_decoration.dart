@@ -28,20 +28,20 @@ class AppDecoration {
 class BorderRadiusStyle {
   // Circle borders
   static BorderRadius get circleBorder12 => BorderRadius.circular(
-    12.h,
+    12.w,
   );
   static BorderRadius get circleBorder24 => BorderRadius.circular(
-    24.h,
+    24.w,
   );
   static BorderRadius get circleBorder36 => BorderRadius.circular(
-    36.h,
+    36.w,
   );
 
   // Rounded borders
   static BorderRadius get roundedBorder5 => BorderRadius.circular(
-    5.h,
+    5.w,
   );
   static BorderRadius get roundedBorder8 => BorderRadius.circular(
-    8.h,
+    8.w,
   );
 }

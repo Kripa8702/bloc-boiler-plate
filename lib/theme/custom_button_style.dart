@@ -7,21 +7,21 @@ class CustomButtonStyles {
   static ButtonStyle get fillDeepOrange => ElevatedButton.styleFrom(
         backgroundColor: deepOrange,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(14.h),
+          borderRadius: BorderRadius.circular(14.w),
         ),
       );
 
   static ButtonStyle get fillBlue => ElevatedButton.styleFrom(
         backgroundColor: primaryColor,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(14.h),
+          borderRadius: BorderRadius.circular(14.w),
         ),
       );
 
   static ButtonStyle get fillGray => ElevatedButton.styleFrom(
         backgroundColor: gray5003,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(14.h),
+          borderRadius: BorderRadius.circular(14.w),
         ),
       );
 
@@ -36,7 +36,7 @@ class CustomButtonStyles {
 class IconButtonStyles {
   static BoxDecoration get fillGray => BoxDecoration(
     color: gray5002,
-    borderRadius: BorderRadius.circular(14.h),
+    borderRadius: BorderRadius.circular(14.w),
   );
 }
 

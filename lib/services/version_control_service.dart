@@ -75,18 +75,18 @@ class VersionControlService {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 25.v),
+              SizedBox(height: 25.h),
               Text('App Update Available', style: CustomTextStyles.titleMedium),
-              SizedBox(height: 10.v),
+              SizedBox(height: 10.h),
               Text('Version: ${update.version}',
                   style: CustomTextStyles.bodyMedium),
-              SizedBox(height: 10.v),
+              SizedBox(height: 10.h),
               Expanded(
                   child: SingleChildScrollView(
                 child: Text('Change Log: ${update.changeLog}',
                     style: CustomTextStyles.bodySmall),
               )),
-              SizedBox(height: 20.v),
+              SizedBox(height: 20.h),
               CustomElevatedButton(
                 text: "Update",
                 buttonStyle: CustomButtonStyles.fillBlue,

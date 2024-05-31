@@ -4,7 +4,6 @@ import 'package:bloc_boiler_plate/features/authentication/repository/auth_reposi
 import 'package:bloc_boiler_plate/features/widgets/custom_elevated_button.dart';
 import 'package:bloc_boiler_plate/features/widgets/custom_icon_button.dart';
 import 'package:bloc_boiler_plate/features/widgets/custom_text_form_field.dart';
-import 'package:bloc_boiler_plate/localizations/app_localization.dart';
 import 'package:bloc_boiler_plate/routing/app_routes.dart';
 import 'package:bloc_boiler_plate/theme/app_styles.dart';
 import 'package:bloc_boiler_plate/theme/colors.dart';
@@ -60,17 +59,17 @@ class _LoginScreenState extends State<LoginScreen> {
                   ? AutovalidateMode.onUserInteraction
                   : AutovalidateMode.disabled,
               child: SingleChildScrollView(
-                padding: EdgeInsets.only(top: 11.v),
+                padding: EdgeInsets.only(top: 11.h),
                 child: Container(
-                  margin: EdgeInsets.only(bottom: 5.v),
+                  margin: EdgeInsets.only(bottom: 5.h),
                   padding:
-                      EdgeInsets.symmetric(horizontal: 32.h, vertical: 39.v),
+                      EdgeInsets.symmetric(horizontal: 32.w, vertical: 39.h),
                   child: Column(
                     children: [
                       CustomIconButton(
                         height: 24.adaptSize,
                         width: 24.adaptSize,
-                        padding: EdgeInsets.only(left: 5.h),
+                        padding: EdgeInsets.only(left: 5.w),
                         alignment: Alignment.centerLeft,
                         onTap: () {
                           NavigatorService.goBack();
@@ -80,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                       _buildPageHeader(context),
-                      SizedBox(height: 100.v),
+                      SizedBox(height: 100.h),
                       CustomTextFormField(
                         controller: emailController,
                         hintText: "Username",
@@ -96,7 +95,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           return null;
                         },
                       ),
-                      SizedBox(height: 24.v),
+                      SizedBox(height: 24.h),
                       CustomTextFormField(
                         controller: passwordController,
                         hintText: "Password",
@@ -114,7 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         },
                         obscureText: true,
                       ),
-                      SizedBox(height: 26.v),
+                      SizedBox(height: 26.h),
                       Align(
                         alignment: Alignment.centerLeft,
                         child: GestureDetector(
@@ -126,7 +125,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         ),
                       ),
-                      SizedBox(height: 55.v),
+                      SizedBox(height: 55.h),
                       CustomElevatedButton(
                         text: "Login",
                         buttonStyle: CustomButtonStyles.fillBlue,
@@ -149,21 +148,21 @@ class _LoginScreenState extends State<LoginScreen> {
                           }
                         },
                       ),
-                      SizedBox(height: 28.v),
+                      SizedBox(height: 28.h),
                       GestureDetector(
                         onTap: () {},
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Padding(
-                              padding: EdgeInsets.only(bottom: 1.v),
+                              padding: EdgeInsets.only(bottom: 1.h),
                               child: Text(
                                 "Don’t have an account?",
                                 style: CustomTextStyles.labelLarge,
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.only(left: 8.h),
+                              padding: EdgeInsets.only(left: 8.w),
                               child: Text(
                                 "Sign Up",
                                 style: CustomTextStyles.labelLarge.copyWith(
@@ -190,8 +189,8 @@ class _LoginScreenState extends State<LoginScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          width: 221.h,
-          margin: EdgeInsets.only(top: 55.v, right: 89.h),
+          width: 221.w,
+          margin: EdgeInsets.only(top: 55.h, right: 89.w),
           child: Text(
             "Login",
             maxLines: 4,
@@ -199,10 +198,10 @@ class _LoginScreenState extends State<LoginScreen> {
             style: CustomTextStyles.displaySmall.copyWith(height: 1.18),
           ),
         ),
-        SizedBox(height: 1.v),
+        SizedBox(height: 1.h),
         Container(
-          width: 282.h,
-          margin: EdgeInsets.only(right: 28.h),
+          width: 282.w,
+          margin: EdgeInsets.only(right: 28.w),
           child: Text(
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             maxLines: 2,

@@ -29,11 +29,11 @@ class SplashScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(height: 1.v),
+                  SizedBox(height: 1.h),
                   CustomImageView(
                     imagePath: appLogo,
-                    height: 325.v,
-                    width: 238.h,
+                    height: 325.h,
+                    width: 238.w,
                   ),
                 ],
               ),

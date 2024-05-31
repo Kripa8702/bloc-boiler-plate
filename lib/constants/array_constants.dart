@@ -27,6 +27,6 @@ const List<Widget> bottomNavScreen = <Widget>[
   Text('Home'),
   Text('Category'),
   Text('Search'),
-  Text('       Favourite'),
+  Text('Favourite'),
   Text('Cart'),
 ];

@@ -59,7 +59,7 @@ class CustomElevatedButton extends StatelessWidget {
   }
 
   Widget get buildElevatedButtonWidget => Container(
-        height: height ?? 60.v,
+        height: height ?? 60.h,
         width: width ?? double.maxFinite,
         margin: margin,
         decoration: decoration,
