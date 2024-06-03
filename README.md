@@ -42,7 +42,7 @@ const double FIGMA_DESIGN_WIDTH = <your_design_width>;
 const double FIGMA_DESIGN_HEIGHT = <your_design_height>;
 ```` 
 
-### Localizations:
+## Localizations:
 Localizations can be removed if not required by simply deleting the 
 `lib/localizations folder`. 
 If required, the  demo usage is showcased in the `lib/localizations/demo_usage.dart` file.
