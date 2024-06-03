@@ -4,13 +4,15 @@ This boilerplate provides a starting point for developing Flutter applications u
 
 ## Removing Unnecessary Firebase Files
 
-If Firebase is not required for your project, remove the following files:
+1) If Firebase is not required for your project, remove the following files:
 
 - `lib/config/firebase_config.dart`
 - `lib/constants/firebase_collections.dart`
 - `lib/services/firebase_service.dart`
 
-Additionally, remove any commented Firebase-related code from `main.dart`.
+2) Remove the firebase plugins from `pubspec.yaml`
+
+3) Remove commented Firebase-related code from `main.dart`.
 
 ## Responsive Sizes
 
