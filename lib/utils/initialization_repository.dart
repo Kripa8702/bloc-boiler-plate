@@ -1,6 +1,5 @@
 import 'dart:developer';
 
-import 'package:bloc_boiler_plate/config/flavour_config.dart';
 import 'package:bloc_boiler_plate/utils/dio_client.dart';
 
 class InitializationRepository {

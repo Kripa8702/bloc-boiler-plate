@@ -122,7 +122,8 @@ class PushNotificationService {
     required String route,
     String? args,
   }) async {
-    String url = ApiPath.sendNotificationUrl;
+    /// This required a Javascript function deployed using Firebase Cloud Functions since Legacy APIs have been deprecated by Firebase. You can find the function at the end of this file.
+    String url = ApiPath.sendNotificationUrl; // Replace with your function URL
     try {
       Map<String, String> data = {
         "title": title,
@@ -197,3 +198,70 @@ checkForNavigation(RemoteMessage message) async {
     debugPrint('------ $e ------');
   }
 }
+
+
+/// ------------------------------- Firebase Cloud Function to send push notification --------------------------
+
+/// const { onCall, onRequest } = require("firebase-functions/v2/https");
+//
+// const functions = require("firebase-functions");
+//
+// const admin = require("firebase-admin");
+//
+// admin.initializeApp();
+//
+// exports.sendNotification = onRequest((request, response) => {
+//     // Retrieve notification data from request payload
+//     try {
+//
+//         const data = request.body;
+//         const title = data.title;
+//         const body = data.body;
+//         const token = data.token;
+//
+//         const route = data.route;
+//         const args = data.args;
+//
+//         // Create a new message
+//         const message = {
+//             notification: {
+//                 title: title,
+//                 body: body,
+//             },
+//             android: {
+//                 priority: "high" // Set priority for Android notifications
+//             },
+//             token: token,
+//         };
+//
+//         message.data = {
+//             tag: route,
+//             args: args
+//         };
+//
+//         console.log("Message", message);
+//         console.log("Data", data);
+//
+//         // Send the notification via FCM
+//         admin.messaging().send(message)
+//             .then((response) => {
+//                 console.log('Notification sent successfully:', response);
+//                 //      response.send('Notification sent successfully!');
+//             })
+//             .catch((error) => {
+//                 console.error('Error sending notification:', error);
+//                 //      response.status(500).send('Error sending notification!');
+//             });
+//
+//         response.status(200).send({
+//             status: "success",
+//             message: "Notification sent successfully!",
+//         });
+//     } catch (error) {
+//         response.status(400).send({
+//             status: "failed",
+//             message: "Failed to send notification!",
+//         });
+//
+//     }
+// });

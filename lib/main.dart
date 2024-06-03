@@ -1,7 +1,5 @@
-import 'package:bloc_boiler_plate/config/flavour_config.dart';
 import 'package:bloc_boiler_plate/bloc_boilerplate_app.dart';
 import 'package:bloc_boiler_plate/services/app_flavor.dart';
-import 'package:bloc_boiler_plate/services/firebase_service.dart';
 import 'package:bloc_boiler_plate/services/version_control_service.dart';
 import 'package:bloc_boiler_plate/simple_bloc_observer.dart';
 import 'package:bloc_boiler_plate/utils/pref_utils.dart';

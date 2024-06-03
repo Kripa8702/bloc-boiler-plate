@@ -1,4 +1,3 @@
-import 'package:bloc_boiler_plate/config/flavour_config.dart';
 import 'package:bloc_boiler_plate/exceptions/exceptions.dart';
 import 'package:bloc_boiler_plate/services/app_flavor.dart';
 import 'package:bloc_boiler_plate/utils/pref_utils.dart';

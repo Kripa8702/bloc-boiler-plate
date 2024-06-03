@@ -1,11 +1,10 @@
-import 'package:bloc_boiler_plate/config/flavour_config.dart';
 import 'package:bloc_boiler_plate/features/authentication/repository/auth_repository.dart';
 import 'package:bloc_boiler_plate/localizations/app_localization.dart';
 import 'package:bloc_boiler_plate/routing/app_routes.dart';
+import 'package:bloc_boiler_plate/services/navigator_service.dart';
 import 'package:bloc_boiler_plate/theme/app_styles.dart';
 import 'package:bloc_boiler_plate/theme/colors.dart';
 import 'package:bloc_boiler_plate/utils/initialization_repository.dart';
-import 'package:bloc_boiler_plate/services/navigator_service.dart';
 import 'package:bloc_boiler_plate/utils/size_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
