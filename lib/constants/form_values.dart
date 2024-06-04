@@ -1,4 +1,4 @@
 class FormValues {
-  static const String username = 'kminchelle';
-  static const String password = '0lelplR';
+  static const String username = 'avat';
+  static const String password = 'avatpass';
 }

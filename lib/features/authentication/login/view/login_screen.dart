@@ -41,6 +41,20 @@ class _LoginScreenState extends State<LoginScreen> {
 
   bool onSubmit = false;
 
+  submitForm() {
+    setState(() {
+      onSubmit = true;
+    });
+    if (_formKey.currentState!.validate()) {
+      context.read<LoginBloc>().add(
+            Login(
+              email: emailController.text,
+              password: passwordController.text,
+            ),
+          );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<LoginBloc, LoginState>(
@@ -104,6 +118,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         onChanged: (value) {
                           setState(() {});
                         },
+                        onSubmitted: (value) {
+                          submitForm();
+                        },
                         validator: (value) {
                           if (value == null ||
                               (!isValidPassword(value, isRequired: true))) {
@@ -134,19 +151,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           fontSize: 16.fSize,
                         ),
                         isLoading: state.status == LoginStatus.loading,
-                        onPressed: () {
-                          setState(() {
-                            onSubmit = true;
-                          });
-                          if (_formKey.currentState!.validate()) {
-                            context.read<LoginBloc>().add(
-                                  Login(
-                                    email: emailController.text,
-                                    password: passwordController.text,
-                                  ),
-                                );
-                          }
-                        },
+                        onPressed: submitForm,
                       ),
                       SizedBox(height: 28.h),
                       GestureDetector(
